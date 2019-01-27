@@ -2,11 +2,160 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Gllacy Shop</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="aboutus.html">О компании</a></li>
+        </ul>
+      </nav>
+      <form class="search-form">
+            <label class="label-hidden" for="site-search">Поиск:</label>
+            <input type="search" name="search" id="site-search" value="">
+      </form>
+      <a href="login-button.html">Войти</a>
+      <a class="basket-button" href="basket.html">Пусто</a>
+      <div class="contacts-top">
+        <p>С 10 до 20, ежедневно</p>
+        <p>8 812 450-25-25</p>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <h1 class="visually-hidden">Магазина мороженого «Глейси»</h1>
 
+      <section class="promo-block-slider">
+        <ul class="slider-list">
+          <li class="slider-item">
+            <img src="img/icecream-1" width="650" height="600" alt="Крем-брюле и пломбир с малиновым джемом">
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+            <a href="">Давайте оба!</a>
+          </li>
+          <li class="slider-item">
+            <img src="img/icecream-2" width="650" height="600" alt="Шоколадный пломбир и лимонный сорбет">
+            <p>Шоколадный пломбир и лимонный сорбет</p>
+            <a href="">Давайте оба!</a>
+          </li>
+          <li class="slider-item">
+            <img src="img/icecream-3" width="650" height="600" alt="Пломбир с помадкой и клубничный щербет">
+            <p>Пломбир с помадкой и клубничный щербет</p>
+            <a href="">Давайте оба!</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="promo">
+        <h2 class="visually-hidden">Акции:</h2>
+        <div class="rasberry-free">
+          <h3>Малинка даром!</h3>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="jam.html">Хочу варенье!</a>
+        </div>
+        <div class="chocolate-free">
+          <h3>Шоколадки даром!</h3>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a href="chocolate.html">Хочу шоколадки!</a>
+        </div>
+      </section>
+
+      <section class="icecream-hits">
+        <h2 class="visually-hidden">Хиты продаж:</h2>
+        <ul class="icecream-hitlist">
+          <li class="icecream-hitlist-item">
+            <img src="img/" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p>310 ₽<span>/кг</span></p>
+            <p>
+              <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            </p>
+          </li>
+          <li class="icecream-hitlist-item">
+            <img src="img/" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p>380 ₽<span>/кг</span></p>
+            <p>
+              <a href="">Сливочно-кофейное с кусочками шоколада</a>
+            </p>
+          </li>
+          <li class="icecream-hitlist-item">
+            <img src="img/" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p>355 ₽<span>/кг</span></p>
+            <p>
+              <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </p>
+          </li>
+          <li class="icecream-hitlist-item">
+            <img src="img/" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p>310 ₽<span>/кг</span></p>
+            <p>
+              <a href="">Сливочное крем-брюле с карамельной подливкой</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="gllace-about">
+        <h2 class="visually-hidden">О нас:</h2>
+        <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </section>
+
+      <article>
+        <h2 class="visually-hidden">Блог:</h2>
+        <p>Новое в нашем блоге</p>
+        <a href="serving-of-fruit-sherbets.html"><h3>10 способов сервировки фруктовых щербетов к столу</h3></a>
+      </article>
+
+      <section class="mailing">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+
+      </section>
+      <section class="subscription">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="subscription-form" method="post">
+          <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+          <input class="subscription-input" id="subscription-email" type="email" value="" placeholder="Электронная почта">
+          <button class="button subscription-button" type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section class="map">
+        
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+
+      <p class="for-suppliers">
+        <b>Для поставщиков</b> 
+        <a href="">О производстве</a>
+      </p>
+
+      <p class="our-documents">
+        <b>Наши документы</b> 
+        <a href="">Экологические стандарты</a>
+      </p>
+
+      <p class="footer-copyright"> 
+        <span>Сделано в HTML Academy © 2019</span>
+      </p>
+    </footer>
   </body>
 </html>
