@@ -9,17 +9,50 @@
       <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Каталог</a>
+            <ul class="site-navigation-catalog">
+              <li><a href="new-product.html">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="sherbets.html">Щербеты</a></li>
+              <li><a href="fruit-ice.html">Фруктовый лед</a></li>
+              <li><a href="melorin.html">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="aboutus.html">О компании</a></li>
         </ul>
       </nav>
-      <form class="search-form">
-        <label class="label-hidden" for="site-search">Поиск:</label>
-        <input type="search" name="search" id="site-search" value="">
-      </form>
-      <a href="login-button.html">Вход</a>
-      <a class="basket-button" href="basket.html">Пусто</a>
+
+      <a href="search.html">Поиск</a>
+      <section class="modal modal-search">
+        <h2 class="visually-hidden">Поиск:</h2>
+        <form class="search-form">
+          <label class="visually-hidden" for="site-search">Поиск:</label>
+          <input type="search" name="search" id="site-search" placeholder="Что ищем?">
+        </form>
+      </section>
+
+      <a href="login.html">Вход</a>
+      <section class="modal modal-login">
+        <h2 class="visually-hidden">Авторизация пользователя</h2>
+        <form class="login-form" action="index.html" method="post">
+          <p>
+            <label class="visually-hidden" for="user-email">Электронная почта</label>
+            <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">
+            Войти
+          </button>
+          <a href="password-recovery.html">Забыли пароль?</a>
+          <a href="user-registration.html">Новая регистрация</a>
+        </form>
+      </section>
+
+      <a class="basket-button" href="cart.html">Пусто</a>
       <div class="contacts-top">
         <p>С 10 до 20, ежедневно</p>
         <p>8 812 450-25-25</p>
@@ -127,7 +160,8 @@
       </div>
 
       <section class="map">
-
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map.jpg" width="1250" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </section>
 
       <section class="contacts">
@@ -174,5 +208,25 @@
         <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</span>
       </div>
     </footer>
+
+    <section class="modal modal-write-us">
+      <h2>Мы обязательно вас ответим!</h2>
+      <form class="write-us-form" action="index.html" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="full-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label for="user-email-write-us">Ваш e-mail:</label>
+          <input id="user-email-write-us" type="text" name="user-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label for="letter-text">Текст письма:</label>
+          <textarea id="letter-text" name="letter-text" rows="5">Напишите что-нибудь...</textarea>
+        </p>
+        <button class="modal-send button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
