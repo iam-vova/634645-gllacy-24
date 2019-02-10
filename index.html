@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -11,7 +14,7 @@
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
             <ul class="site-navigation-catalog">
-              <li><a href="new-product.html">Новинки</a></li>
+              <li><a class="new-products" href="new-products.html">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="sherbets.html">Щербеты</a></li>
               <li><a href="fruit-ice.html">Фруктовый лед</a></li>
@@ -23,7 +26,7 @@
         </ul>
       </nav>
 
-      <a href="search.html">Поиск</a>
+      <a class="search-link" href="search.html">Поиск</a>
       <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск:</h2>
         <form class="search-form">
@@ -32,7 +35,7 @@
         </form>
       </section>
 
-      <a href="login.html">Вход</a>
+      <a class="login-link" href="login.html">Вход</a>
       <section class="modal modal-login">
         <h2 class="visually-hidden">Авторизация пользователя</h2>
         <form class="login-form" action="index.html" method="post">
@@ -44,7 +47,7 @@
             <label class="visually-hidden" for="user-password">Пароль</label>
             <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
           </p>
-          <button class="button" type="submit">
+          <button class="button login-form-button" type="submit">
             Войти
           </button>
           <a href="password-recovery.html">Забыли пароль?</a>
@@ -68,17 +71,17 @@
           <li class="slider-item">
             <img src="img/creme_brulee_and_raspberry.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
             <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <a href="">Давайте оба!</a>
+            <a class="button slider-button" href="">Давайте оба!</a>
           </li>
           <li class="slider-item">
             <img src="img/chocolate_and_lemon.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
             <p>Шоколадный пломбир и лимонный сорбет</p>
-            <a href="">Давайте оба!</a>
+            <a class="button slider-button" href="">Давайте оба!</a>
           </li>
           <li class="slider-item">
             <img src="img/fudge_and_strawberry.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
             <p>Пломбир с помадкой и клубничный щербет</p>
-            <a href="">Давайте оба!</a>
+            <a class="button slider-button" href="">Давайте оба!</a>
           </li>
         </ul>
       </section>
@@ -88,12 +91,12 @@
         <div class="rasberry-free">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="jam.html" target="_blank">Хочу варенье!</a>
+          <a class="promo-button" href="jam.html" target="_blank">Хочу варенье!</a>
         </div>
         <div class="chocolate-free">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a href="chocolate.html" target="_blank">Хочу шоколадки!</a>
+          <a class="promo-button" href="chocolate.html" target="_blank">Хочу шоколадки!</a>
         </div>
       </section>
 
@@ -106,6 +109,7 @@
             <p>
               <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </p>
+            <a class="button" href="">Быстрый просмотр</a>
           </li>
           <li class="icecream-hitlist-item">
             <img src="img/creamy_coffee_with_chocolate_pieces.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -113,6 +117,7 @@
             <p>
               <a href="">Сливочно-кофейное с кусочками шоколада</a>
             </p>
+            <a class="button" href="">Быстрый просмотр</a>
           </li>
           <li class="icecream-hitlist-item">
             <img src="img/creamy_strawberry_with_white_chocolate_powder.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -120,6 +125,7 @@
             <p>
               <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </p>
+            <a class="button" href="">Быстрый просмотр</a>
           </li>
           <li class="icecream-hitlist-item">
             <img src="img/creamy_cream_brulee_with_caramel_sauce.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -127,6 +133,7 @@
             <p>
               <a href="">Сливочное крем-брюле с карамельной подливкой</a>
             </p>
+            <a class="button" href="">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -142,20 +149,22 @@
       </section>
 
       <div class="blog-and-subscription">
-        <article>
+        <article class="blog">
           <h2 class="visually-hidden">Блог:</h2>
           <p>Новое в нашем блоге</p>
           <a href="serving-of-fruit-sherbets.html">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
 
         <section class="subscription">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscription-form" method="post">
-            <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-            <input class="subscription-input" id="subscription-email" type="email" value="" placeholder="Электронная почта">
-            <button class="button subscription-button" type="submit">Отправить</button>
-          </form>
+          <div class="subscription-wrap">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscription-form" method="post">
+              <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+              <input class="subscription-input" id="subscription-email" type="email" value="" placeholder="Электронная почта">
+              <button class="button subscription-button" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
 
@@ -169,9 +178,9 @@
         <p>
           Адрес главного офиса<br>
           и офлайн-магазина: </p>
-        <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <p class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону:</p>
-        <p>8 812 450-25-25</p>  
+        <p class="contacts-telephone">8 812 450-25-25</p>  
         <p>(с 10 до 20 ежедневно)</p>
         <a class="button" href="contacts.html">Форма обратной связи</a>
       </section>
@@ -191,18 +200,18 @@
 
       <div class="footer-middle">
         <p class="for-suppliers">
-          <b>Для поставщиков</b> 
+          <a href="">Для поставщиков</a> 
           <a href="">О производстве</a>
         </p>
 
         <p class="our-documents">
-          <b>Наши документы</b> 
+          <a href="">Наши документы</a> 
           <a href="">Экологические стандарты</a>
         </p>
       </div>
 
       <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</span>
@@ -210,7 +219,7 @@
     </footer>
 
     <section class="modal modal-write-us">
-      <h2>Мы обязательно вас ответим!</h2>
+      <h2>Мы обязательно вам ответим!</h2>
       <form class="write-us-form" action="index.html" method="post">
         <p>
           <label for="user-name">Ваше имя:</label>
@@ -222,7 +231,7 @@
         </p>
         <p>
           <label for="letter-text">Текст письма:</label>
-          <textarea id="letter-text" name="letter-text" rows="5">Напишите что-нибудь...</textarea>
+          <textarea id="letter-text" name="letter-text" rows="5" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="modal-send button" type="submit">Отправить</button>
       </form>
