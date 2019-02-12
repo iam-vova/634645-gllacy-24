@@ -134,14 +134,14 @@ a {
 .search-form input:focus,
 .login-form input:hover,
 .login-form input:focus {
-  border: 2px solid rgba(178, 178, 178, 0.52);
+  box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
 }
 
 .search-form input:active,
 .search-form textarea:active,
 .login-form input:active,
 .login-form textarea:active {
-  border: 2px solid rgba(46, 136, 228, 0.52);
+  box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
 
@@ -233,13 +233,16 @@ a {
 
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
+
   border: none;
 }
 
 .button:hover,
 .button:focus {
+  color: #fefefe;
+
   box-shadow: 0px 2px 2px 0 #ac1000;
-  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background: linear-gradient(to bottom, #f58569 50%, #ec6f5e 100%);
 }
 
 .button:active {
@@ -264,8 +267,8 @@ a {
 .promo-button:focus {
   color: #fefefe;
 
-  box-shadow: 0px 1px 2px 0 #ac1000;
-  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background: linear-gradient(to bottom, #f58569 50%, #ec6f5e 100%);
 }
 
 .promo-button:active {
@@ -482,12 +485,12 @@ a {
 
 .subscription-form input:hover,
 .subscription-form input:focus {
-  border: 2px solid rgba(178, 178, 178, 0.52);
+  box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
 }
 
 .subscription-form input:active,
 .subscription-form textarea:active {
-  border: 2px solid rgba(46, 136, 228, 0.52);
+  box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
 .contacts {
@@ -627,12 +630,12 @@ a {
 .write-us-form input:focus,
 .write-us-form textarea:hover,
 .write-us-form textarea:focus {
-  border: 2px solid rgba(178, 178, 178, 0.52);
+  box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
 }
 
 .write-us-form input:active,
 .write-us-form textarea:active {
-  border: 2px solid rgba(46, 136, 228, 0.52);
+  box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
 .modal-cart {
