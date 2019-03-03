@@ -18,17 +18,17 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li><a href="catalog.html"><span>Каталог</span></a>
-                <!-- <ul class="site-navigation-catalog">
+              <li class="site-navigation-level1"><a href="#"><span>Каталог</span></a>
+                <ul class="site-navigation-catalog">
                   <li><a class="new-products" href="new-products.html">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="sherbets.html">Щербеты</a></li>
                   <li><a href="fruit-ice.html">Фруктовый лед</a></li>
                   <li><a href="melorin.html">Мелорин</a></li>
-                </ul> -->
+                </ul>
               </li>
-              <li><a href="delivery.html"><span>Доставка и оплата</span></a></li>
-              <li><a href="aboutus.html"><span>О Компании</span></a></li>
+              <li class="site-navigation-level1"><a href="delivery.html"><span>Доставка и оплата</span></a></li>
+              <li class="site-navigation-level1"><a href="aboutus.html"><span>О Компании</span></a></li>
             </ul>
           </nav>
         </div>
@@ -36,16 +36,16 @@
         <div class="main-header-right">
           <div class="user-navigation">
             <a class="search-link" href="search.html"><span class="visually-hidden">Поиск</span></a>
-            <!-- <section class="modal modal-search">
+            <section class="modal modal-search">
               <h2 class="visually-hidden">Поиск:</h2>
               <form class="search-form">
                 <label class="visually-hidden" for="site-search">Поиск:</label>
                 <input type="search" name="search" id="site-search" placeholder="Что ищем?">
               </form>
-            </section> -->
+            </section>
 
             <a class="login-link" href="login.html">Вход</a>
-            <!-- <section class="modal modal-login">
+            <section class="modal modal-login">
               <h2 class="visually-hidden">Авторизация пользователя</h2>
               <form class="login-form" action="index.html" method="post">
                 <p>
@@ -59,10 +59,10 @@
                 <button class="button login-form-button" type="submit">
                   Войти
                 </button>
-                <a href="password-recovery.html">Забыли пароль?</a>
-                <a href="user-registration.html">Новая регистрация</a>
+                <a href="password-recovery.html"><span>Забыли пароль?</span></a>
+                <a href="user-registration.html"><span>Новая регистрация</span></a>
               </form>
-            </section> -->
+            </section>
 
             <a class="basket-button" href="cart.html">Пусто</a>
           </div>
@@ -261,15 +261,15 @@
         <h2>Мы обязательно вам ответим!</h2>
         <form class="write-us-form" action="index.html" method="post">
           <p>
-            <label for="user-name">Ваше имя:</label>
+            <label class="visually-hidden for="user-name">Ваше имя:</label>
             <input id="user-name" type="text" name="full-name" placeholder="Как вас зовут?">
           </p>
           <p>
-            <label for="user-email-write-us">Ваш e-mail:</label>
+            <label class="visually-hidden for="user-email-write-us">Ваш e-mail:</label>
             <input id="user-email-write-us" type="email" name="user-email" placeholder="Ваша почта для ответа?">
           </p>
           <p>
-            <label for="letter-text">Текст письма:</label>
+            <label class="visually-hidden for="letter-text">Текст письма:</label>
             <textarea id="letter-text" name="letter-text" rows="5" placeholder="Напишите что-нибудь..."></textarea>
           </p>
           <button class="modal-send button" type="submit">Отправить</button>
