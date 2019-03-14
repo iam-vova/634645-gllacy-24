@@ -124,11 +124,11 @@ input[type="radio"].label-hidden {
 }
 
 .site-wrapper::before {
-  background-image: url("img/slider-item2.png");
+  background-image: url("../img/slider-item2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("img/slider-item3.png");
+  background-image: url("../img/slider-item3.png");
 }
 
 .container {
@@ -205,7 +205,8 @@ input[type="radio"].label-hidden {
   border-radius: 16px;
 }
 
-.site-navigation-catalog .active-page {
+.site-navigation-catalog .active-catalog-page {
+  background-color: #d07058;
   border-radius: 0;
 }
 
@@ -213,8 +214,8 @@ input[type="radio"].label-hidden {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.site-navigation-level1 a:hover,
-.site-navigation-level1 a:focus {
+.site-navigation-level1 > a:hover,
+.site-navigation-level1 > a:focus {
   padding: 7px 14px;
 
   text-decoration: none;
@@ -224,12 +225,12 @@ input[type="radio"].label-hidden {
   border-radius: 16px;
 }
 
-.site-navigation-level1 span:hover,
-.site-navigation-level1 span:focus {
+.site-navigation-level1 > span:hover,
+.site-navigation-level1 > span:focus {
   border-bottom: none;
 }
 
-.site-navigation-level1 a:active {
+.site-navigation-level1 > a:active {
   color: #323232;
 
   background-color: #ededed;
@@ -300,8 +301,8 @@ input[type="radio"].label-hidden {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.site-navigation-catalog a:hover,
-.site-navigation-catalog a:focus {
+.site-navigation-catalog a:hover:not(.active-catalog-page),
+.site-navigation-catalog a:focus:not(.active-catalog-page) {
   padding: 6px 20px;
   padding-bottom: 9px;
 
@@ -311,7 +312,7 @@ input[type="radio"].label-hidden {
   border-radius: 0;
 }
 
-.site-navigation-catalog a:active {
+.site-navigation-catalog a:active:not(.active-catalog-page) {
   color: #323232;
   
   background-color: #f6b5a5;
@@ -768,6 +769,10 @@ input[type="radio"].label-hidden {
   background-color: rgba(248, 247, 244, 0.4);
 }
 
+.slider-controls label:active {
+  background-color: #ffffff;
+}
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/creme_brulee_and_raspberry.png");
@@ -833,6 +838,7 @@ input[type="radio"].label-hidden {
 
   background-image: url("../img/raspberry.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .chocolate-free {
@@ -851,6 +857,7 @@ input[type="radio"].label-hidden {
 
   background-image: url("../img/chocolate.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo h3 {
@@ -1174,6 +1181,7 @@ input[type="radio"].label-hidden {
   background-color: #ffffff;
   background-image: url("../img/fruit_sherbet.png");
   background-repeat: no-repeat;
+  background-position: 0 100%;
 }
 
 .blog p {
@@ -1201,7 +1209,7 @@ input[type="radio"].label-hidden {
 .blog a:hover,
 .blog a:focus,
 .blog a:active {
-  color: #ffbc9e;
+  color: #e84d37;
 }
 
 .subscription {
@@ -1226,6 +1234,7 @@ input[type="radio"].label-hidden {
 
   border-radius: 15px;
   background-image: url("../img/post_background.svg");  
+  background-size: cover;
 }
 
 .subscription-wrap {
@@ -1235,9 +1244,7 @@ input[type="radio"].label-hidden {
   min-height: 211px;
   margin-top: 4px;
   margin-bottom: 5px;
-  padding-top: 30px;
-  padding-left: 21px;
-  padding-right: 17px;
+  padding: 30px 17px 30px 21px;
 
   border-radius: 10px;
   background-color: #f8f7f4;
@@ -1564,6 +1571,7 @@ input[type="radio"].label-hidden {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  vertical-align: middle;
 
   text-decoration: none;
   color: #ffffff;
@@ -1815,6 +1823,8 @@ input[type="radio"].label-hidden {
   display: inline-block;
   position: relative;
 
+  vertical-align: middle;
+
   text-decoration: none;
   color: #ffffff;
 }
@@ -2038,6 +2048,7 @@ input[type="radio"].label-hidden {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  vertical-align: middle;
 
   color: #ffffff;
   text-align: center;
@@ -2269,14 +2280,14 @@ input[type="radio"].label-hidden {
   border-radius: 50%;
 }
 
-.filter-fat-input + label:hover::before,
-.filter-fat-input:focus + label::before {
+.filter-fat-input:not(:disabled) + label:hover::before,
+.filter-fat-input:focus:not(:disabled) + label::before {
   border-color: #ffffff;
 }
 
-.filter-fat-input + label:hover::after,
-.filter-fat-input:focus + label::after {
-  background-color: #fff;
+.filter-fat-input:not(:disabled) + label:hover::after,
+.filter-fat-input:focus:not(:disabled) + label::after {
+  background-color: #ffffff;
 }
 
 .filter-filler {
